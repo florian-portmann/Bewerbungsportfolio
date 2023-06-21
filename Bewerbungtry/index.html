@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE-=edge">
+        <meta name="viewport"
+        content="width=device-width,
+        inital-scale=1.0">
+        <title>Florian Application</title>
+        <link rel="stylesheet" href="style.css" />   
+        <link rel="icon" href="Pics/Logo.png">     
+    </head>
+    <body>
+        <header>
+            <div class="circle">
+
+                <div class="logo"></div>
+                <div class="text">
+                    <p>
+                        Florian Portmann - Florian Portmann -
+                    </p>
+                </div>
+            </div>
+            <script>
+                const text = document.querySelector(".text");
+                text.innerHTML = text.innerText
+                .split("")
+                .map(
+                (char, i) => `<span style="transform:rotate(${i * 9.5}deg)">${char}
+                </span>`
+                )
+                .join("");
+            </script>
+        </header>
+
+
+        <section id="alltext">
+        <section id="textwelcome">
+            <div class="container">
+              <h1 class="animated-text">
+                <span>W</span>
+                <span>i</span>
+                <span>l</span>
+                <span>l</span>
+                <span>k</span>
+                <span>o</span>
+                <span>m</span>
+                <span>m</span>
+                <span>e</span>
+                <span>n</span>
+              </h1>
+              <h1 class="space">
+                  __
+              </h1>
+              <h1 class="animated-text">
+                  <span>b</span>
+                  <span>e</span>
+                  <span>i</span>
+                  <span>m</span>
+              </h1>
+              <h1 class="space">
+                  __
+              </h1>
+              <h1 class="animated-text">
+                  <span>B</span>
+                  <span>e</span>
+                  <span>w</span>
+                  <span>e</span>
+                  <span>r</span>
+                  <span>b</span>
+                  <span>u</span>
+                  <span>n</span>
+                  <span>g</span>
+                  <span>s</span>
+                  <span>p</span>
+                  <span>o</span>
+                  <span>r</span>
+                  <span>t</span>
+                  <span>f</span>
+                  <span>o</span>
+                  <span>l</span>
+                  <span>i</span>
+                  <span>o</span>
+              </h1>
+              
+            </div>
+            
+        </section>
+        <section id="textfrom">
+            <div class="container">
+                <h1 class="animated-text">
+                  <span>v</span>
+                  <span>o</span>
+                  <span>n</span>
+                </h1>
+                <h1 class="space">
+                    __
+                </h1>
+                <h1 class="animated-text">
+                    <span>F</span>
+                    <span>L</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>I</span>
+                    <span>A</span>
+                    <span>N</span>
+                </h1>
+                <h1 class="space">
+                    __
+                </h1>
+                <h1 class="animated-text">
+                    <span>P</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>N</span>
+                    <span>N</span>
+                </h1>
+            </div>
+                  
+        </section>
+        <script>
+            const animatedLetters = document.querySelectorAll('.animated-text span');
+            animatedLetters.forEach((letter, index) => {
+              setTimeout(() => {
+                letter.style.animationDelay = `${index * 0.1}s`;
+              }, 500);
+            });
+          </script>
+    </section>
+
+    <section id="nav">
+        <ul>
+            <li><a href="aboutme.html"><button class="aboutmebut">Lebenslauf</button></a></li>
+            <!--<li><a href="resume.html"><button class="resumebut">Lebenslauf</button></a></li>-->
+            <li><a href="projects.html"><button class="projectsbut">Projekte</button></a></li>
+            <li><a href="certificat.html"><button class="certificatbut">Zeugnisse</button></a></li>
+            <li><a href="contact.html"><button class="contactbut">Kontakt</button></a></li>
+        </ul>
+    </section>
+    
+
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE-=edge">
+        <meta name="viewport"
+        content="width=device-width,
+        inital-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+        <title>Florian Application</title>
+        <link rel="stylesheet" href="contact.css" />        
+        <link rel="icon" href="Pics/Logo.png">     
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+
+            <div class="circle">
+                <div class="logo"></div>
+                <div class="text">
+                    <p>
+                        Florian Portmann - Florian Portmann -
+                    </p>
+                </div>
+            </div>
+            <script>
+                const text = document.querySelector(".text");
+                text.innerHTML = text.innerText
+                .split("")
+                .map(
+                (char, i) => `<span style="transform:rotate(${i * 9.5}deg)">${char}
+                </span>`
+                )
+                .join("");
+            </script>
+            </a>
+
+
+            <div class="container">
+                <h1 class="animated-text">
+                <span>K</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>k</span>
+                <span>t</span>
+                </h1>
+            </div>
+            <script>
+                const animatedLetters = document.querySelectorAll('.animated-text span');
+                animatedLetters.forEach((letter, index) => {
+                    setTimeout(() => {
+                    letter.style.animationDelay = `${index * 0.1}s`;
+                    }, 500);
+                });
+            </script>
+        </header>
+
+        <section id="gap1">
+
+        </section>
+
+
+        <div class="containerres">
+            <h1 class="animated-text">
+                <span>K</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>k</span>
+                <span>t</span>
+            </h1>
+          </div>
+          <script>
+              const animatedLetters = document.querySelectorAll('.animated-text span');
+              animatedLetters.forEach((letter, index) => {
+                setTimeout(() => {
+                  letter.style.animationDelay = `${index * 0.1}s`;
+                }, 500);
+              });
+            </script>
+
+        <section id="gap">
+
+        </section>
+
+        <section id="page">
+            <section id="contacts">
+                <section id="contact">
+                    <div class="fullcontact0">
+                      <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                      <p>E-Mail</p>
+                      <div class="email">florian@muepo.ch</div>
+                    </div>
+                  </section>
+                  
+                  <script>
+                    const fullContactDiv0 = document.querySelector('.fullcontact0');
+                    const contactText0 = fullContactDiv0.querySelector('.email');
+                                      
+                    fullContactDiv0.addEventListener('click', () => {
+                      navigator.clipboard.writeText(contactText0.textContent).then(() => {
+                        alert('Email copied!');
+                      });
+                    });
+                  </script>
+                  
+
+
+                <section id="contact">
+                    <div class="fullcontact">
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        <p>Telefon</p>
+                        <div class="number">079 842 39 31</div>
+                    </div>
+                </section>
+                
+                <script>
+                    const fullContactDiv = document.querySelector('.fullcontact');
+                    const contactText = fullContactDiv.querySelector('.number');
+                    
+                    fullContactDiv.addEventListener('click', () => {
+                        navigator.clipboard.writeText(contactText.textContent).then(() => {
+                            alert('Phone number copied');
+                        });
+                    });
+                </script>
+                
+                
+                <a href="https://www.linkedin.com/in/florian-portmann-902875270/" target="_blank">
+                <section id="contact">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                    <p>LinkedIN</p>
+                </section>
+                </a>
+
+                <a href="https://github.com/florian-portmann/" target="_blank">
+
+                <section id="contact">
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                    <p>GitHub</p>
+                </section>
+                </a>
+
+            </section>
+        </section>
+        
+    </body>
+</html>

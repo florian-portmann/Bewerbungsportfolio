@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE-=edge">
+        <meta name="viewport"
+        content="width=device-width,
+        inital-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+        <title>Florian Application</title>
+        <link rel="stylesheet" href="certificat.css" />        
+        <link rel="icon" href="Pics/Logo.png">      
+  
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+
+            <div class="circle">
+                <div class="logo"></div>
+                <div class="text">
+                    <p>
+                        Florian Portmann - Florian Portmann -
+                    </p>
+                </div>
+            </div>
+            <script>
+                const text = document.querySelector(".text");
+                text.innerHTML = text.innerText
+                .split("")
+                .map(
+                (char, i) => `<span style="transform:rotate(${i * 9.5}deg)">${char}
+                </span>`
+                )
+                .join("");
+            </script>
+            </a>
+
+            <div class="container">
+                <h1 class="animated-text">
+                <span>Z</span>
+                <span>e</span>
+                <span>u</span>
+                <span>g</span>
+                <span>n</span>
+                <span>i</span>
+                <span>s</span>
+                </h1>
+            </div>
+            <script>
+                const animatedLetters = document.querySelectorAll('.animated-text span');
+                animatedLetters.forEach((letter, index) => {
+                    setTimeout(() => {
+                    letter.style.animationDelay = `${index * 0.1}s`;
+                    }, 500);
+                });
+            </script>
+        </header>
+
+        <section id="page">
+        <section id="gap1">
+
+        </section>
+
+
+        <div class="containerres">
+            <h1 class="animated-text">
+                <span>Z</span>
+                <span>e</span>
+                <span>u</span>
+                <span>g</span>
+                <span>n</span>
+                <span>i</span>
+                <span>s</span>
+            </h1>
+          </div>
+          <script>
+              const animatedLetters = document.querySelectorAll('.animated-text span');
+              animatedLetters.forEach((letter, index) => {
+                setTimeout(() => {
+                  letter.style.animationDelay = `${index * 0.1}s`;
+                }, 500);
+              });
+            </script>
+
+        <section id="gap">
+
+        </section>
+
+        <a href="certificat/ZeugnisseFlorianPortmann.pdf" download="ZeugnisseFlorianPortmann.pdf" class="download-button">
+            <i class="fa-solid fa-download" style="color: #ffffff;"></i>
+        </a>
+
+        
+    <div class="pdf-container">
+        <h1>Informatiknoten BBBaden</h1>
+        <embed src="certificat/BBB-Zeugnisv2.pdf" type="application/pdf" style="width: 90vw; height: 100vh;"></embed>
+
+        <h1>Zeugnis des dritten Semesters</h1>
+        <embed src="certificat/Zeugnis3v3.pdf" type="application/pdf" style="width: 90vw; height: 100vh;"></embed>
+        
+        <h1>Zeugnis des zweiten Semesters</h1>
+        <embed src="certificat/Zeugnis2v3.pdf" type="application/pdf" style="width: 90vw; height: 100vh;"></embed>
+
+        <h1>Zeugnis des ersten Semesters</h1>
+        <embed src="certificat/Zeugnis1v3.pdf" type="application/pdf" style="width: 90vw; height: 100vh;"></embed>
+        
+        <h1>Gratulation der Schulleitung</h1>
+        <embed src="certificat/Gratulation.pdf" type="application/pdf" style="width: 90vw; height: 100vh;"></embed>
+    </div>
+    </section>
+    </body>
+</html>
